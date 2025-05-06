@@ -2,5 +2,7 @@ model:
   name: "mistralai/Mixtral-8x7B-Instruct-v0.1"
 training:
   batch_size: 4
+  gradient_accumulation_steps: 4
   learning_rate: 2e-4
-  epochs: 3
+  num_train_epochs: 3
+  output_dir: "models/fine_tuned"
